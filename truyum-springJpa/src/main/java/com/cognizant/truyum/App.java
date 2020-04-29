@@ -15,6 +15,9 @@ import com.cognizant.truyum.service.MenuItemService;
 @ComponentScan
 public class App {
 
+	static {
+		System.setProperty("org.slf4j.simpleLogger.defaultLogLevel", "debug");
+	}
 	private static Logger LOGGER;
 	private static MenuItemService menuItemService;
 
